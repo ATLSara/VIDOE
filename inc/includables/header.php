@@ -19,6 +19,9 @@
         </div>
     </form>
 
-    <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar"></ul>
+    <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
+    	<?php if(!isset($_SESSION["username"])) : ?>
+    	<?php endif; ?>
+    </ul>
 
 </nav>
