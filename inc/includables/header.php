@@ -13,7 +13,7 @@
            <input type="text" class="form-control" placeholder="Search for...">
            <div class="input-group-append">
               <button class="btn btn-light" type="button">
-              <i class="fas fa-search"></i> 
+              <i class="fas fa-search"></i>
               </button>
            </div>
         </div>
@@ -21,6 +21,18 @@
 
     <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
     	<?php if(!isset($_SESSION["username"])) : ?>
+				<li class="nav-item dropdown no-arrow osahan-right-navbar-user">
+
+					<a href="#" class="nav-link dropdown-toggle user-dropdown-link" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="img/defaultAvatar.jpg" alt="PP"> Guest
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+						<a href="#" class="dropdown-item">Registrarse</a>
+						<a href="#" class="dropdown-item">Iniciar sesión</a>
+					</div>
+
+				</li>
     	<?php endif; ?>
     </ul>
 
